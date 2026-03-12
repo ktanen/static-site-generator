@@ -16,9 +16,9 @@ else:
 
 
 def main():
-    if os.path.exists("public"):
-        shutil.rmtree("public")
-    copy_files_recursive("static", "public")
+    if os.path.exists(dir_path_public):
+        shutil.rmtree(dir_path_public)
+    copy_files_recursive(dir_path_static, dir_path_public)
 
     generate_pages_recursive(dir_path_content, template_path, dir_path_public, basepath)
 
