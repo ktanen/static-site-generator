@@ -1,7 +1,6 @@
 from textnode import TextNode, TextType, text_node_to_html_node
-from htmlnode import HTMLNode, LeafNode, ParentNode
+from htmlnode import ParentNode
 from blocktype import BlockType, block_to_block_type
-from inline_markdown import split_nodes_delimiter, split_nodes_image, split_nodes_link
 from text_to_textnodes import text_to_textnodes
 
 def markdown_to_blocks(markdown):
